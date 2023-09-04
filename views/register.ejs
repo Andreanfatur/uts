@@ -1,56 +1,57 @@
+<%- include('./nav.ejs') %>
 <div
-  style="width: 500px; margin-left: auto; margin-right: auto; margin-top: 70px"
+  class="mt-10 mx-auto w-[500px] h-[550px] border-2 border-slate-100 flex justify-center rounded-3xl"
 >
-  <form action="/register" method="post">
-    <div class="mb-3">
-      <label for="usernsme" class="form-label">usernsme</label>
-      <input
-        type="text"
-        class="form-control"
-        id="username"
-        name="username"
-        placeholder="username"
-      />
+  <form action="/register" method="post" class="mt-10">
+    <div class="">
+      <div class="mb-3">
+        <label for="usernsme" class="text-xl">Usernsme</label>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="username"
+          class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="email" class="text-xl">Email address</label>
+        <input
+          type="email"
+          class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
+          id="email"
+          name="email"
+          placeholder="email"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="password" class="text-xl">Password</label>
+        <input
+          type="password"
+          class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
+          id="password"
+          name="password"
+          placeholder="password"
+        />
+      </div>
+      <div class="mb-3">
+        <label for="konfirmasi" class="text-xl">Konfirmasi</label>
+        <input
+          type="password"
+          class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
+          id="konfirmasi"
+          name="konfirmasi"
+          placeholder="konfirmasi"
+        />
+      </div>
+      <div class="w-full flex justify-center mt-14">
+        <button
+          type="submit"
+          class="mx-auto px-14 py-2 border rounded-full bg-blue-700 text-slate-100"
+        >
+          Register
+        </button>
+      </div>
     </div>
-    <div class="mb-3">
-      <label for="email" class="form-label">Email address</label>
-      <input
-        type="email"
-        class="form-control"
-        id="email"
-        aria-describedby="emailHelp"
-        name="email"
-        placeholder="email"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Password</label>
-      <input
-        type="password"
-        class="form-control"
-        id="password"
-        name="password"
-        placeholder="password"
-      />
-    </div>
-    <div class="mb-3">
-      <label for="konfirmasi" class="form-label">Konfirmasi</label>
-      <input
-        type="password"
-        class="form-control"
-        id="konfirmasi"
-        name="konfirmasi"
-        placeholder="konfirmasi"
-      />
-    </div>
-    <button type="submit" class="btn btn-primary" style="margin-top: 30px">
-      Register
-    </button>
-    <a
-      href="/"
-      class="btn btn-danger"
-      style="margin-top: 30px; margin-left: 325px"
-      >Kembali</a
-    >
   </form>
 </div>

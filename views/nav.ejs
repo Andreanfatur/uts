@@ -1,20 +1,52 @@
 <nav>
   <div
-    style="width: 100%; height: 90px; background-color: lightblue"
-    class="navbar"
+    class="flex w-full h-[80px] bg-opacity-40 bg-blue-300 text-slate-100 shadow-xl"
   >
-    <div style="font-size: x-large">Shoop</div>
-    <ul style="display: flex; list-style: none; font-size: large">
+    <div class="font-sans font-bold text-3xl my-auto w-[60%] ml-14">Shoop</div>
+    <ul class="flex my-auto">
       <% if (data) { %>
-      <li>
-        <a href="/logout"><span>Log Out</span></a>
+      <li class="mx-5">
+        <a href="/"
+          ><span class="font-sans font-semibold text-xl my-auto">Home</span></a
+        >
+      </li>
+
+      <li class="mx-5">
+        <a href="/profile"
+          ><span class="font-sans font-semibold text-xl">Profile</span></a
+        >
+      </li>
+      <li class="mx-5">
+        <a href="/dashboard"
+          ><span class="font-sans font-semibold text-xl my-auto"
+            >Dashboard</span
+          ></a
+        >
+      </li>
+      <li class="mx-5">
+        <a href="/logout"
+          ><span class="font-sans font-semibold text-xl my-auto"
+            >Log Out</span
+          ></a
+        >
       </li>
       <% }else{ %>
-      <li>
-        <a href="/login"><span>Login</span></a>
+      <li class="mx-8">
+        <a href="/"
+          ><span class="font-sans font-semibold text-xl my-auto">Home</span></a
+        >
       </li>
-      <li>
-        <a href="/register"><span>Sing Up</span></a>
+      <li class="mx-8">
+        <a href="/login"
+          ><span class="font-sans font-semibold text-xl my-auto">Login</span></a
+        >
+      </li>
+      <li class="mx-8">
+        <a href="/register"
+          ><span class="font-sans font-semibold text-xl my-auto"
+            >Sing Up</span
+          ></a
+        >
       </li>
       <% } %>
     </ul>

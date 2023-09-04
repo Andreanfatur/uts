@@ -1,15 +1,17 @@
 <%- include('nav.ejs') %>
-<div>
-  <div class="card" style="width: 18rem">
-    <img src="..." class="card-img-top" alt="..." />
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a href="#" class="btn btn-primary">Go somewhere</a>
-    </div>
-  </div>
-</div>
 <h2><%= data %></h2>
+<div class="mt-2 w-full flex justify-center">
+  <form action="" method="post" class="flex">
+    <input
+      type="text"
+      class="w-[500px] h-8 rounded-s-xl pl-5"
+      placeholder="Cari Product"
+    />
+    <button type="submit" class="px-7 bg-blue-700 h-8 rounded-e-xl">
+      Cari
+    </button>
+  </form>
+</div>
+<div class="w-[80%] min-h-screen"></div>
+
+<div class="w-full h-[400px] bg-slate-400"></div>

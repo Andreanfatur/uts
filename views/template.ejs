@@ -5,34 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title><%= title %></title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
-      crossorigin="anonymous"
-    ></script>
-    <style>
-      .navbar ul li a {
-        text-decoration: none;
-        color: black;
-      }
-      .navbar ul {
-        margin-right: 100px;
-      }
-      .navbar ul li {
-        margin-left: 40px;
-      }
-      .navbar div {
-        margin-left: 60px;
-      }
-    </style>
+    <link rel="stylesheet" href="/output.css" />
   </head>
-  <body>
+  <body
+    style="
+      background-image: url('/img/background.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    "
+  >
     <%- body %>
   </body>
 </html>

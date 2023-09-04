@@ -1,39 +1,41 @@
+<%- include('nav.ejs') %>
 <div
-  style="width: 500px; margin-left: auto; margin-right: auto; margin-top: 70px"
+  class="mt-16 mx-auto w-[500px] h-[450px] border-2 border-slate-100 flex justify-center rounded-3xl"
 >
-  <form action="/login" method="post">
-    <div class="mb-3">
-      <label for="email" class="form-label">Email address</label>
+  <form action="/login" method="post" class="mt-10">
+    <div class="mt-7">
+      <label for="email" class="text-xl">Email address</label>
       <input
         type="email"
-        class="form-control"
+        class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
         id="email"
         aria-describedby="emailHelp"
         placeholder="Masukkan Email Anda"
         name="email"
       />
-      <div id="emailHelp" class="form-text">
-        We'll never share your email with anyone else.
-      </div>
+      <div id="emailHelp" class="form-text"></div>
     </div>
-    <div class="mb-3">
-      <label for="password" class="form-label">Password</label>
+    <div class="mt-7">
+      <label for="password" class="text-xl">Password</label>
       <input
         type="password"
-        class="form-control"
+        class="flex justify-end w-[400px] h-10 text-xl mt-4 border rounded-full border-slate-800 pl-4"
         id="password"
         placeholder="Masukkan Password Anda"
         name="password"
       />
     </div>
-    <button type="submit" class="btn btn-primary" style="margin-top: 30px">
-      Login
-    </button>
-    <a
-      href="/"
-      class="btn btn-danger"
-      style="margin-top: 30px; margin-left: 345px"
-      >Kembali</a
-    >
+    <p class="mt-5">
+      Belum punya akun silahkan
+      <a href="/register" class="text-blue-600 font-bold">Sing Up</a>
+    </p>
+    <div class="w-full flex justify-center mt-14">
+      <button
+        type="submit"
+        class="mx-auto px-14 py-2 border rounded-full bg-blue-700 text-slate-100"
+      >
+        Login
+      </button>
+    </div>
   </form>
 </div>
